@@ -1,0 +1,26 @@
+<div class="banner">
+	<h1>Le Wagon's cocktails</h1>
+	<br>
+	<p>Awesome cocktails for Lewagons Alumini</p>
+<%= link_to "Add a cocktail", new_cocktail_path, class: "btn btn-danger btn-lg btn-add-cocktail" %>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card">
+			<div>
+				<% random = rand(15) %>
+				<img src="https://loremflickr.com/g/100/100/<%= cocktail.name %>%20cocktail" class="avatar-square">
+			</div>
+        	<div class="card-description">
+            	<h2><%= cocktail.name %></h2>
+         	</div>
+          <%= link_to "", cocktail_path(cocktail), class: 'card-link' %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

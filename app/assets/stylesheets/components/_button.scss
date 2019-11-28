@@ -1,0 +1,20 @@
+.btn-add-cocktail {
+	border-radius: 10px;
+	background-color: black;
+	box-shadow: 1px 1px 5px black;
+	transition: background-color 0.5s ease;
+  	border-color: white;
+}
+.btn-add-cocktail:hover {
+	border-radius: 10px;
+	background-color: grey;
+	box-shadow: 1px 1px 5px black;
+	border-color: white;
+}
+div.btn-add-cocktail {
+	align-items: center;
+	justify-content: center;
+}
+.button-center {
+	display: flex;
+}
